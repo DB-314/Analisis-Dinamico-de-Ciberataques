@@ -1,16 +1,28 @@
 # Analisis-Dinamico-de-Ciberataques
 
-# Dynamic Cyberattack Analysis using Machine Learning and Graph Databases
+# Dynamic Cyberattack Analysis
 
-This project proposes an approach for detecting multi-stage cyberattacks through supervised machine learning and graph-based event correlation.
+Detection and representation of multi-stage cyberattacks through the integration of supervised Machine Learning and graph-based event correlation.
 
-The solution combines:
-- Supervised classification of network security events
-- Graph representation using Neo4j
-- Correlation of attack phases aligned with MITRE ATT&CK
+This project proposes an approach for identifying attack tactics from network security events and representing their relationships using Neo4j.
 
-Dataset:
+The Machine Learning module was designed and executed in a Google Colab environment for data preprocessing, model training, validation, and prediction generation. The generated results are later integrated into Neo4j to build a graph-based representation of attack phases aligned with the MITRE ATT&CK framework.
+
+## Modules
+
+* machine_learning → Event preprocessing, training and prediction generation (Google Colab)
+* neo4j → Graph storage, event correlation and attack path analysis
+
+## Dataset
+
 UWF-ZeekData24
 
-Technologies:
-Python, XGBoost, Neo4j, Cypher, Pandas
+## Technologies
+
+* Python
+* Google Colab
+* XGBoost
+* Neo4j
+* Pandas
+* Cypher
+
